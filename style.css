@@ -1,0 +1,207 @@
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #6d6969;
+    background-color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #ecf0f1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #34495e;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 2rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.intro-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.intro-image {
+    flex: 1;
+    text-align: center;
+}
+
+.intro-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 30%;
+}
+
+section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.service {
+    flex-basis: calc(33.333% - 1rem);
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 0.5rem;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.skill-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2rem; /* Increased space between rows */
+}
+
+.skill {
+    flex-basis: calc(33.333% - 2rem); /* Adjusted for spacing */
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    margin: 0 1rem; /* Added horizontal margin for spacing between skills */
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skill i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    flex-basis: calc(50% - 1rem);
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.project p {
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+button {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #34495e;
+}
+
+/* Typewriter effect */
+.typewriter {
+    overflow: hidden; /* Ensures text does not overflow the container */
+    border-right: .15em solid #fff; /* Creates a cursor effect */
+    white-space: nowrap; /* Keeps the text in a single line */
+    margin: 0 auto; /* Centers the text */
+    letter-spacing: .15em; /* Spacing between characters */
+    animation:
+        typing 6s steps(30, end) infinite, /* Continuous typewriting animation */
+        blink-caret .90s step-end infinite; /* Continuous blinking cursor animation */
+}
+
+/* Typewriting animation */
+@keyframes typing {
+    0% { width: 0; }
+    50% { width: 100%; }
+    100% { width: 0; }
+}
+
+/* Blinking cursor animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+
